@@ -28,9 +28,22 @@ pip install --upgrade pip
 dnf install -y     openssl     ca-certificates     curl     git     gcc     make     python3     python3-pip
 dnf install -y python3.11 python3.11-devel
 
-# Verify cn certificate kmip
+# Create dir
+mkdir -p /opt/kmip
+mkdir -p /opt/kmip/tenant_a # we'll put "client.pem" and  "client.key" relaated kmip ctm client
+mkdir -p /opt/kmip/ca # weìll put "ctm_ca.pem" with default rootca ctm (not kmip ca)
 
-openssl s_client -connect <IP-CTM>:5696 -showcerts
+# Copy Root CA ctm to system trust store directory
+
+cp /opt/kmip/ca/ctm_ca.pem /etc/pki/ca-trust/source/anchors/
+
+# Update CA trsust store
+
+pdate-ca-trust extract
+
+# Verify cn hostname certificate kmip and TLS connection 
+
+openssl s_client -connect <IP-CTM>:5696 -showcerts 
 .......
              CN = kmip.ciphertrustmanager.local
 .......
