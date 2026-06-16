@@ -80,3 +80,9 @@ source kmip-env/bin/activate
 [OK] Key retrieved: None
 
 ```
+
+### ON CTM
+
+- Log in as domainuseradmin user
+- Under the key. we'll see the key cretated by the kmip_test.py script.
+
