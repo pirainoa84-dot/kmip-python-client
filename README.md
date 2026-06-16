@@ -2,10 +2,15 @@
 This script demonstrates how to connect to CipherTrust Manager (KMIP) using mTLS and perform basic key operations. It is intended for testing connectivity, validating certificates, and troubleshooting KMIP integration before implementing a full KMIP integration.
 
 ## Requirements
-On RED HAT portal
 
-https://developers.redhat.com/register 
-use account for test: Red Hat Developer Subscription for Individuals
+### Red Hat Account
+
+Register on the Red Hat Developer Portal:
+
+https://developers.redhat.com/register
+
+Use the **Red Hat Developer Subscription for Individuals** for testing and lab environments (free for personal use).
+
 
 On RHEL 9.7
 
