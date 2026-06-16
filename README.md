@@ -31,6 +31,9 @@ pip install --upgrade pip
 dnf install -y     openssl     ca-certificates     curl     git     gcc     make     python3     python3-pip
 dnf install -y python3.11 python3.11-devel
 
+
+git clone https://github.com/pirainoa84-dot/kmip-python-client.git
+
 python3.11 -m venv kmip-env
 source kmip-env/bin/activate
   pip install --upgrade pip
