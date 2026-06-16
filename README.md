@@ -1,6 +1,6 @@
 ## Requirements
 On https://developers.redhat.com/register 
-Use account for test: Red Hat Developer Subscription for Individuals
+use account for test: Red Hat Developer Subscription for Individuals
 
 On RHEL 9.7
 
@@ -26,6 +26,12 @@ pip install --upgrade pip
 dnf install -y     openssl     ca-certificates     curl     git     gcc     make     python3     python3-pip
 dnf install -y python3.11 python3.11-devel
 
+openssl s_client -connect <IP-CTM>:5696 -showcerts
+.......
+             CN = kmip.ciphertrustmanager.local
+.......
+
+echo "kmip.ciphertrustmanager.local <CTM-IP>" >>/etc/hosts
 
 git clone https://github.com/pirainoa84-dot/kmip-python-client.git
 
