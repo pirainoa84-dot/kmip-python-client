@@ -5,10 +5,6 @@ Use account for test: Red Hat Developer Subscription for Individuals
 On RHEL 9.7
 
 ```
-
-https://developers.redhat.com/register
-
-
 # Check current status
 subscription-manager status
 
@@ -25,7 +21,6 @@ sudo subscription-manager repos --enable=rhel-9-for-x86_64-appstream-rpm
 # Verify repositories
 dnf repolist
 
-
 dnf install -y python3.11 python3.11-devel
 pip install --upgrade pip
 dnf install -y     openssl     ca-certificates     curl     git     gcc     make     python3     python3-pip
@@ -38,4 +33,13 @@ python3.11 -m venv kmip-env
 source kmip-env/bin/activate
   pip install --upgrade pip
   pip install pykmip==0.10.0
+
+#Run script kmip_test.py
+(kmip-env) [root@kkmip-python-client]# python kmip_test.py
+
+=== KMIP TEST ===
+[OK] Connessione stabilita
+[OK] Key created: a017df4a0f974caea58621577128a483cd9e22b4d62f4cf8a698c438fb926b5a
+[OK] Key retrieved: None
+
 ```
