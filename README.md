@@ -1,6 +1,6 @@
 # KMIP Python Client (CipherTrust Manager)
 
-Example Python client for interacting with  **Thales CipherTrust Manager (KMIP)** using mutual TLS (mTLS).
+Example Python client for interacting with  **Thales CipherTrust Manager (KMIP)** using mutual TLS (mTLS). This example Python client demonstrates how to interact with Thales CTM (KMIP) using mutual TLS(mTLS).It can be used to validate KMIP connectivity, certificate authentication, and basic communication with CipherTrust Manager before implementing a full integration.
 
 Tested on:
 
@@ -88,3 +88,6 @@ CTM_PORT = 5696
 [OK] Key created: 44e234f5e2a445adb04570b2132a226e5c650c80542f4faa9f090e36e99d6f79
 [OK] Key retrieved: None
 ```
+### On CTM
+
+Log in on CTM webUi with the domain user and under keys section verify the presence of the key 
