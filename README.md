@@ -19,13 +19,6 @@ Tested on:
 - Compatible with modern Python (3.11+)
 
 
-## Clone Repository
-
-
-```bash
-git clone https://github.com/pirainoa84-dot/kmip-python-client.git
-cd kmip-python-client
-```
 ## Requirements
 
 On RHEL 9.7
@@ -39,12 +32,11 @@ dnf install -y python3.11 python3.11-devel
 pip install --upgrade pip
 dnf install -y     openssl     ca-certificates     curl     git     gcc     make     python3     python3-pip
 dnf install -y python3.11 python3.11-devel
-pip install --upgrade pip
+
 python3.11 -m venv kmip-env
 source kmip-env/bin/activate
-pip install --upgrade pip
-pip install pykmip
-pip install pykmip==0.10.0
+  pip install --upgrade pip
+  pip install pykmip==0.10.0
 ```
 ## Certificates Setup
 ```
@@ -85,8 +77,24 @@ Edit kmip_test.py:
 
 CTM_HOST = "kmip.ciphertrustmanager.local"
 CTM_PORT = 5696
-```
+
+
+## Clone Repository
+
+
+```bash
+git clone https://github.com/pirainoa84-dot/kmip-python-client.git
+cd kmip-python-client
+
+python3.11 -m venv kmip-env
+source kmip-env/bin/activate
+  pip install --upgrade pip
+  pip install pykmip==0.10.0
+
+
+``````
 ### Run
+
 ```
 (kmip-env) [root@kkmip]# python kmip_test.py
 
