@@ -1,5 +1,9 @@
 # KMIP Python Client
-This script demonstrates how to connect to CipherTrust Manager (KMIP) using mTLS and perform basic key operations. It is intended for testing connectivity, validating certificates, and troubleshooting KMIP integration before implementing a full KMIP integration.
+
+This script implements a simple KMIP Python client and demonstrates how to connect to CipherTrust Manager (KMIP) using mTLS, as well as perform basic key operations.
+
+It is intended for testing connectivity, validating certificates, and troubleshooting KMIP integrations before implementing a full solution.
+
 
 ## Requirements
 
