@@ -12,7 +12,7 @@ https://developers.redhat.com/register
 Use the **Red Hat Developer Subscription for Individuals** for testing and lab environments (free for personal use).
 
 
-On RHEL 9.7
+### On RHEL 9.7
 
 ```
 # Check current status
