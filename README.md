@@ -70,6 +70,7 @@ python3.11 -m venv kmip-env
 source kmip-env/bin/activate
   pip install --upgrade pip
   pip install pykmip==0.10.0
+cd kmip-python-client
 
 #Run script kmip_test.py
 (kmip-env) [root@kkmip-python-client]# python kmip_test.py
