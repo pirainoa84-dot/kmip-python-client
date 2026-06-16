@@ -1,4 +1,6 @@
 # KMIP Python Client (CipherTrust Manager)
+This script demonstrates how to connect to CipherTrust Manager (KMIP) using mTLS and perform basic key operations. It is intended for testing connectivity, validating certificates, and troubleshooting KMIP integration before implementing a full KMIP integration.
+
 ## Requirements
 On RED HAT portal
 
