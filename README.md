@@ -19,6 +19,13 @@ Tested on:
 - Compatible with modern Python (3.11+)
 
 
+## Clone Repository
+
+
+```bash
+git clone https://github.com/pirainoa84-dot/kmip-python-client.git
+cd kmip-python-client
+```
 ## Requirements
 
 On RHEL 9.7
